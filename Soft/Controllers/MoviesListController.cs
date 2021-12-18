@@ -9,11 +9,11 @@ using DevExtreme.AspNet.Data;
 using DevExtreme.AspNet.Mvc;
 
 namespace Soft.Controllers {
-    public class SampleDataController : ApiController {
+    public class MoviesListController : ApiController {
 
         [HttpGet]
         public HttpResponseMessage Get(DataSourceLoadOptions loadOptions) {
-            return Request.CreateResponse(DataSourceLoader.Load(SampleData.Orders, loadOptions));
+            return Request.CreateResponse(DataSourceLoader.Load(MoviesList.Movies, loadOptions));
         }
 
     }
