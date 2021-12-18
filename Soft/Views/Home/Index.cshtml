@@ -11,6 +11,11 @@
     .DataSource(d => d.WebApi().Controller("MoviesList").Key("MovieId"))
     .Columns(columns => {
         columns.AddFor(m => m.Title)
+            .Lookup(lookup => lookup
+                .DataSource(d => d.WebApi().Controller("MoviesList").Key("Id"))
+                .DisplayExpr("Title")
+                .ValueExpr("Title")
+            )
             .AllowFiltering(true)
             .AllowHeaderFiltering(false)
             .AllowSorting(false);
@@ -29,7 +34,7 @@
             .AllowFiltering(false)
             .AllowHeaderFiltering(false)
             .AllowSorting(false);
-    })
+})
     .Paging(p => p.PageSize(10))
     .FilterRow(f => f.Visible(true))
     .HeaderFilter(f => f.Visible(true))
