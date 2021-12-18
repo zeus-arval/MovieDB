@@ -6,15 +6,14 @@
 
 <h2>Home</h2>
 
-@(Html.DevExtreme().DataGrid<SampleOrder>()
+@(Html.DevExtreme().DataGrid<Movie>()
     .ShowBorders(true)
-    .DataSource(d => d.WebApi().Controller("SampleData").Key("OrderID"))
+    .DataSource(d => d.WebApi().Controller("MoviesList").Key("MovieId"))
     .Columns(columns => {
-        columns.AddFor(m => m.OrderID);
-        columns.AddFor(m => m.OrderDate);
-        columns.AddFor(m => m.CustomerName);
-        columns.AddFor(m => m.ShipCountry);
-        columns.AddFor(m => m.ShipCity);
+        columns.AddFor(m => m.Title);
+        columns.AddFor(m => m.CategoryName);
+        columns.AddFor(m => m.Year);
+        columns.AddFor(m => m.Rating);
     })
     .Paging(p => p.PageSize(10))
     .FilterRow(f => f.Visible(true))
@@ -24,7 +23,7 @@
     .RemoteOperations(true)
     .Summary(s => s
         .TotalItems(totalItems => {
-            totalItems.AddFor(m => m.ShipCity).SummaryType(SummaryType.Count);
+            totalItems.AddFor(m => m.Title).SummaryType(SummaryType.Count);
         })
         .GroupItems(groupItems => {
             groupItems.Add().SummaryType(SummaryType.Count);
