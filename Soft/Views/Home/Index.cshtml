@@ -10,15 +10,29 @@
     .ShowBorders(true)
     .DataSource(d => d.WebApi().Controller("MoviesList").Key("MovieId"))
     .Columns(columns => {
-        columns.AddFor(m => m.Title);
-        columns.AddFor(m => m.CategoryName);
-        columns.AddFor(m => m.Year);
-        columns.AddFor(m => m.Rating);
+        columns.AddFor(m => m.Title)
+            .AllowFiltering(true)
+            .AllowHeaderFiltering(false)
+            .AllowSorting(false);
+
+        columns.AddFor(m => m.CategoryName)
+            .AllowFiltering(false)
+            .AllowHeaderFiltering(true)
+            .AllowSorting(false);
+
+        columns.AddFor(m => m.Year)
+            .AllowFiltering(false)
+            .AllowHeaderFiltering(false)
+            .AllowSorting(false);
+
+        columns.AddFor(m => m.Rating)
+            .AllowFiltering(false)
+            .AllowHeaderFiltering(false)
+            .AllowSorting(false);
     })
     .Paging(p => p.PageSize(10))
     .FilterRow(f => f.Visible(true))
     .HeaderFilter(f => f.Visible(true))
-    .GroupPanel(p => p.Visible(true))
     .Grouping(g => g.AutoExpandAll(false))
     .RemoteOperations(true)
     .Summary(s => s
