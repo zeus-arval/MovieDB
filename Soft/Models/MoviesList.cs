@@ -27,7 +27,7 @@ namespace Soft.Models
                 Description = "Second movie on this site",
                 Rating = 7,
                 CategoryId = 1,
-                CategoryName = "Thriller"
+                CategoryName = "Comedy"
             },
             new Movie()
             {
@@ -37,7 +37,7 @@ namespace Soft.Models
                 Description = "Third movie on this site",
                 Rating = 8,
                 CategoryId = 0,
-                CategoryName = "Thriller"
+                CategoryName = "Drama"
             },
         };
     }
