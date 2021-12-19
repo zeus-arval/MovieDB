@@ -2,7 +2,7 @@
 
 namespace Data
 {
-    public class Movie : BaseData
+    public class MovieData : BaseData
     {
         public string Title { get; set; }
         public int Year { get; set; }

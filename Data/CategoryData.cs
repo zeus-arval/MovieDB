@@ -2,7 +2,7 @@
 
 namespace Data
 {
-    public class Category : BaseData
+    public class CategoryData : BaseData
     {
         public string Name { get; set; }
     }
