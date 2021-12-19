@@ -34,7 +34,7 @@
             .AllowFiltering(false)
             .AllowHeaderFiltering(false)
             .AllowSorting(false);
-})
+    })
     .Paging(p => p.PageSize(10))
     .FilterRow(f => f.Visible(true))
     .HeaderFilter(f => f.Visible(true))
@@ -48,4 +48,31 @@
             groupItems.Add().SummaryType(SummaryType.Count);
         })
     )
+    .MasterDetail(md => md
+        .Enabled(true)
+        .Template(new TemplateName("descriptionContent"))
+        )
 )
+
+@using (Html.DevExtreme().NamedTemplate("descriptionContent"))
+{
+    @(Html.DevExtreme().DataGrid<Movie>()
+                .ShowBorders(true)
+                .LoadPanel(l => l.Enabled(false))
+                .Columns(columns =>
+                {
+                    columns.AddFor(m => m.Description);
+                    columns.AddFor(m => m.Rating);
+                }
+                )
+                .DataSource(d => d.WebApi()
+                    .Controller("MoviesList")
+                    .LoadAction("GetMoviesDescriptions")
+                    .LoadParams(new
+                    {
+                        id = new JS("data.MovieId")
+                    }
+                )
+            )
+    )
+}
