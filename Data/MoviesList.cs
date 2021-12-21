@@ -15,19 +15,19 @@ namespace Data
         private List<CategoryData> CreateCategoriesList()
             => new List<CategoryData>
             {
-                new() { Name = "Thriller", Id = 0 },
-                new() { Name = "Action", Id = 1 },
-                new() { Name = "Comedy", Id = 2 },
-                new() { Name = "Drama", Id = 3 },
-                new() { Name = "Fantasy", Id = 4 },
-                new() { Name = "Horror", Id = 5 },
-                new() { Name = "Mystery", Id = 6 },
+                new CategoryData() { Name = "Thriller", Id = 0 },
+                new CategoryData() { Name = "Action", Id = 1 },
+                new CategoryData() { Name = "Comedy", Id = 2 },
+                new CategoryData() { Name = "Drama", Id = 3 },
+                new CategoryData() { Name = "Fantasy", Id = 4 },
+                new CategoryData() { Name = "Horror", Id = 5 },
+                new CategoryData() { Name = "Mystery", Id = 6 },
             };
 
         private List<MovieData> CreateMoviesList()
             => new List<MovieData>
             {
-                new()
+                new MovieData()
                 {
                     Id = 0,
                     CategoryId = 0,
@@ -37,7 +37,7 @@ namespace Data
                     "A remake of the 2018 Danish film of the same name, the film stars Jake Gyllenhaal and Christina Vidal, with the voices of Ethan Hawke, Riley Keough," +
                     " Eli Goree, Da'Vine Joy Randolph, Paul...",
                     Rating = 6
-                },new()
+                },new MovieData()
                 {
                     Id = 1,
                     CategoryId = 0,
@@ -46,7 +46,7 @@ namespace Data
                     Description = "A retired FBI agent with psychological gifts is assigned to help track down 'The Tooth Fairy', a mysterious serial killer. Aiding him" + 
                     " is imprisoned forensic psychiatrist Dr. Hannibal 'The Cannibal' Lecter...",
                     Rating = 7
-                },new()
+                },new MovieData()
                 {
                     Id = 2,
                     CategoryId = 0,
@@ -55,7 +55,7 @@ namespace Data
                     Description = "After a car wreck on the winding Mulholland Drive renders a woman amnesiac, she and a perky Hollywood-hopeful search for clues and " +
                     "answers across Los Angeles in a twisting venture beyond dreams and reality...",
                     Rating = 8
-                },new()
+                },new MovieData()
                 {
                     Id = 3,
                     CategoryId = 1,
@@ -64,7 +64,7 @@ namespace Data
                     Description = "In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life. But when Laura, a mutant child pursued " +
                     "by scientists, comes to him for help, he must get her to safety...",
                     Rating = 7
-                },new()
+                },new MovieData()
                 {
                     Id = 4,
                     CategoryId = 1,
@@ -73,7 +73,7 @@ namespace Data
                     Description = "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search" +
                     " for the one hope of restoring peace...",
                     Rating = 8
-                },new()
+                },new MovieData()
                 {
                     Id = 5,
                     CategoryId = 1,
@@ -82,7 +82,7 @@ namespace Data
                     Description = "A film crew goes to a tropical island for an exotic location shoot and discovers a colossal ape who takes a shine to their female blonde" +
                     " star. He is then captured and brought back to New York City for public exhibition...",
                     Rating = 8
-                },new()
+                },new MovieData()
                 {
                     Id = 6,
                     CategoryId = 2,
@@ -90,7 +90,7 @@ namespace Data
                     Title = "Pulp Fiction",
                     Description = "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
                     Rating = 9
-                },new()
+                },new MovieData()
                 {
                     Id = 7,
                     CategoryId = 2,
@@ -98,7 +98,7 @@ namespace Data
                     Title = "Booksmart",
                     //Description = "",
                     //Rating = 
-                },new()
+                },new MovieData()
                 {
                     Id = 8,
                     CategoryId = 3,
@@ -107,7 +107,7 @@ namespace Data
                     Description = "On the eve of their high school graduation, two academic superstars and best friends realize they should have worked less and played more. " +
                     "Determined not to fall short of their peers, the girls try to cram four years of fun into one night...",
                     Rating = 6
-                },new()
+                },new MovieData()
                 {
                     Id = 9,
                     CategoryId = 3,
@@ -115,7 +115,7 @@ namespace Data
                     Title = "Mission Impossible - Fallout",
                     Description = "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
                     Rating = 8
-                },new()
+                },new MovieData()
                 {
                     Id = 10,
                     CategoryId = 3,
@@ -123,7 +123,7 @@ namespace Data
                     Title = "The Godfather",
                     Description = "The Godfather follows Vito Corleone, Don of the Corleone family, as he passes the mantel to his unwilling son, Michael...",
                     Rating = 9
-                },new()
+                },new MovieData()
                 {
                     Id = 11,
                     CategoryId = 4,
@@ -132,7 +132,7 @@ namespace Data
                     Description = "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against " +
                     "Sauron's new ally, Saruman, and his hordes of Isengard...",
                     Rating = 9
-                },new()
+                },new MovieData()
                 {
                     Id = 12,
                     CategoryId = 4,
@@ -140,7 +140,7 @@ namespace Data
                     Title = "The Hobbit: Unexpected Journey",
                     //Description = "",
                     //Rating = 
-                },new()
+                },new MovieData()
                 {
                     Id = 13,
                     CategoryId = 4,
@@ -149,7 +149,7 @@ namespace Data
                     Description = "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain " +
                     "home, and the gold within it from the dragon Smaug...",
                     Rating = 8
-                },new()
+                },new MovieData()
                 {
                     Id = 14,
                     CategoryId = 4,
@@ -158,7 +158,7 @@ namespace Data
                     Description = "Merlin the magician helps Arthur Pendragon unite the Britons around the Round Table of Camelot, even as dark forces conspire" +
                     " to tear it apart...",
                     Rating = 6
-                },new()
+                },new MovieData()
                 {
                     Id = 15,
                     CategoryId = 5,
@@ -166,7 +166,7 @@ namespace Data
                     Title = "Oculus",
                     Description = "A woman tries to exonerate her brother, who was convicted of murder, by proving that the crime was committed by a supernatural phenomenon...",
                     Rating = 5
-                },new()
+                },new MovieData()
                 {
                     Id = 16,
                     CategoryId = 5,
@@ -175,7 +175,7 @@ namespace Data
                     Description = "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by " +
                     "using horror films as part of a deadly game...",
                     Rating = 7
-                },new()
+                },new MovieData()
                 {
                     Id = 17,
                     CategoryId = 5,
@@ -184,7 +184,7 @@ namespace Data
                     Description = "A man who specialises in debunking paranormal occurrences checks into the fabled room 1408 in the Dolphin Hotel. Soon after " +
                     "settling in, he confronts genuine terror...",
                     Rating = 7
-                },new()
+                },new MovieData()
                 {
                     Id = 18,
                     CategoryId = 5,
@@ -193,7 +193,7 @@ namespace Data
                     Description = "After spending time in a mental institution, two devoted sisters return to the home of their father and cruel stepmother. Once " +
                     "there, in addition to dealing with their stepmother's obsessive, unbalanced ways, an interfering ghost also affects their...",
                     Rating = 7
-                },new()
+                },new MovieData()
                 {
                     Id = 19,
                     CategoryId = 6,
@@ -201,7 +201,7 @@ namespace Data
                     Title = "Us",
                     Description = "A family's serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them...",
                     Rating = 5
-                },new()
+                },new MovieData()
                 {
                     Id = 20,
                     CategoryId = 6,
