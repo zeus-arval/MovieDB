@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Aids\Aids.csproj">
+      <Project>{466DC1E1-75FF-4702-8727-CA56D75C1CDC}</Project>
+      <Name>Aids</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{282B2E6D-0957-4E70-979C-46FAD3D7B6B2}</Project>
       <Name>Data</Name>
