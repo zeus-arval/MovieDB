@@ -24,9 +24,7 @@ namespace Data
                 CategoryId = 0,
                 Year = 2021,
                 Title = "The Guilty",
-                Description = "The Guilty is a 2021 American crime thriller film directed and produced by Antoine Fuqua, from a screenplay by Nic Pizzolatto. " +
-                "A remake of the 2018 Danish film of the same name, the film stars Jake Gyllenhaal and Christina Vidal, with the voices of Ethan Hawke, Riley Keough," +
-                " Eli Goree, Da'Vine Joy Randolph, Paul...",
+                Description = "The Guilty is a 2021 American crime...",
                 Rating = 6
             },new MovieData()
             {
@@ -34,8 +32,7 @@ namespace Data
                 CategoryId = 0,
                 Year = 2002,
                 Title = "Red Dragon",
-                Description = "A retired FBI agent with psychological gifts is assigned to help track down 'The Tooth Fairy', a mysterious serial killer. Aiding him" +
-                " is imprisoned forensic psychiatrist Dr. Hannibal 'The Cannibal' Lecter...",
+                Description = "A retired FBI agent with psychological...",
                 Rating = 7
             },new MovieData()
             {
@@ -43,8 +40,7 @@ namespace Data
                 CategoryId = 0,
                 Year = 2001,
                 Title = "Mulholland Drive",
-                Description = "After a car wreck on the winding Mulholland Drive renders a woman amnesiac, she and a perky Hollywood-hopeful search for clues and " +
-                "answers across Los Angeles in a twisting venture beyond dreams and reality...",
+                Description = "After a car wreck on the winding...",
                 Rating = 8
             },new MovieData()
             {
@@ -52,8 +48,7 @@ namespace Data
                 CategoryId = 1,
                 Year = 2017,
                 Title = "Logan",
-                Description = "In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life. But when Laura, a mutant child pursued " +
-                "by scientists, comes to him for help, he must get her to safety...",
+                Description = "In a future where mutants...",
                 Rating = 7
             },new MovieData()
             {
@@ -61,8 +56,7 @@ namespace Data
                 CategoryId = 1,
                 Year = 2015,
                 Title = "Star Wars VII: The Force Awakens",
-                Description = "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search" +
-                " for the one hope of restoring peace...",
+                Description = "As a new threat to the galaxy rises...",
                 Rating = 8
             },new MovieData()
             {
@@ -70,8 +64,7 @@ namespace Data
                 CategoryId = 1,
                 Year = 1933,
                 Title = "King Kong",
-                Description = "A film crew goes to a tropical island for an exotic location shoot and discovers a colossal ape who takes a shine to their female blonde" +
-                " star. He is then captured and brought back to New York City for public exhibition...",
+                Description = "A film crew goes to a tropical island...",
                 Rating = 8
             },new MovieData()
             {
@@ -79,7 +72,7 @@ namespace Data
                 CategoryId = 2,
                 Year = 1994,
                 Title = "Pulp Fiction",
-                Description = "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                Description = "The lives of two mob hitmen...",
                 Rating = 9
             },new MovieData()
             {
@@ -95,8 +88,7 @@ namespace Data
                 CategoryId = 3,
                 Year = 1941,
                 Title = "Citizen Kane",
-                Description = "On the eve of their high school graduation, two academic superstars and best friends realize they should have worked less and played more. " +
-                "Determined not to fall short of their peers, the girls try to cram four years of fun into one night...",
+                Description = "On the eve of their high school graduation...",
                 Rating = 6
             },new MovieData()
             {
@@ -104,7 +96,7 @@ namespace Data
                 CategoryId = 3,
                 Year = 2018,
                 Title = "Mission Impossible - Fallout",
-                Description = "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+                Description = "Ethan Hunt and his IMF team...",
                 Rating = 8
             },new MovieData()
             {
@@ -112,7 +104,7 @@ namespace Data
                 CategoryId = 3,
                 Year = 1972,
                 Title = "The Godfather",
-                Description = "The Godfather follows Vito Corleone, Don of the Corleone family, as he passes the mantel to his unwilling son, Michael...",
+                Description = "The Godfather follows Vito Corleone...",
                 Rating = 9
             },new MovieData()
             {
@@ -120,8 +112,7 @@ namespace Data
                 CategoryId = 4,
                 Year = 2002,
                 Title = "The Lord of the Rings: The Two Towers",
-                Description = "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against " +
-                "Sauron's new ally, Saruman, and his hordes of Isengard...",
+                Description = "While Frodo and Sam edge closer to Mordor...",
                 Rating = 9
             },new MovieData()
             {
@@ -129,25 +120,23 @@ namespace Data
                 CategoryId = 4,
                 Year = 2012,
                 Title = "The Hobbit: Unexpected Journey",
-                //Description = "",
-                //Rating = 
+                Description = "A reluctant Hobbit, Bilbo Baggins...",
+                Rating = 8
             },new MovieData()
             {
                 Id = 13,
                 CategoryId = 4,
                 Year = 2013,
                 Title = "Peter Pan",
-                Description = "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain " +
-                "home, and the gold within it from the dragon Smaug...",
-                Rating = 8
+                Description = "The Darling family children receive a visit from Peter...",
+                Rating = 6
             },new MovieData()
             {
                 Id = 14,
                 CategoryId = 4,
                 Year = 1981,
                 Title = "Excalibur",
-                Description = "Merlin the magician helps Arthur Pendragon unite the Britons around the Round Table of Camelot, even as dark forces conspire" +
-                " to tear it apart...",
+                Description = "Merlin the magician helps Arthur Pendragon...",
                 Rating = 6
             },new MovieData()
             {
@@ -155,7 +144,7 @@ namespace Data
                 CategoryId = 5,
                 Year = 2013,
                 Title = "Oculus",
-                Description = "A woman tries to exonerate her brother, who was convicted of murder, by proving that the crime was committed by a supernatural phenomenon...",
+                Description = "A woman tries to exonerate her brother...",
                 Rating = 5
             },new MovieData()
             {
@@ -163,8 +152,7 @@ namespace Data
                 CategoryId = 5,
                 Year = 1996,
                 Title = "Scream",
-                Description = "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by " +
-                "using horror films as part of a deadly game...",
+                Description = "A year after the murder of her mother...",
                 Rating = 7
             },new MovieData()
             {
@@ -172,8 +160,7 @@ namespace Data
                 CategoryId = 5,
                 Year = 2007,
                 Title = "1408",
-                Description = "A man who specialises in debunking paranormal occurrences checks into the fabled room 1408 in the Dolphin Hotel. Soon after " +
-                "settling in, he confronts genuine terror...",
+                Description = "A man who specialises in debunking...",
                 Rating = 7
             },new MovieData()
             {
@@ -181,8 +168,7 @@ namespace Data
                 CategoryId = 5,
                 Year = 2003,
                 Title = "A Tale Of Two Sisters",
-                Description = "After spending time in a mental institution, two devoted sisters return to the home of their father and cruel stepmother. Once " +
-                "there, in addition to dealing with their stepmother's obsessive, unbalanced ways, an interfering ghost also affects their...",
+                Description = "After spending time in a mental...",
                 Rating = 7
             },new MovieData()
             {
@@ -190,7 +176,7 @@ namespace Data
                 CategoryId = 6,
                 Year = 2019,
                 Title = "Us",
-                Description = "A family's serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them...",
+                Description = "A family's serene beach vacation...",
                 Rating = 5
             },new MovieData()
             {
@@ -198,8 +184,7 @@ namespace Data
                 CategoryId = 6,
                 Year = 2005,
                 Title = "Brick",
-                Description = "A teenage loner pushes his way into the underworld of a high school crime ring to investigate the disappearance" +
-                " of his ex-girlfriend...",
+                Description = "A teenage loner pushes his way into...",
                 Rating = 7
             },
         };
