@@ -2,8 +2,8 @@
 
 namespace Service.Common
 {
-    public interface IBaseService<TEntity>
+    public interface IBaseService<TView>
     {
-        List<TEntity> GetList();
+        List<TView> GetList();
     }
 }
