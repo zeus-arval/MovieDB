@@ -7,8 +7,7 @@ namespace Service
 {
     public class MoviesService : BaseService<Movie, MovieDetails>
     {
-        public MoviesService() : this(null) { }
-        public MoviesService(MoviesRepo moviesRepo) : base(moviesRepo) { }
+        public MoviesService() : base(new MoviesRepo()) { }
 
         public MovieDetails GetMovieDetailsById(int id)
         {
