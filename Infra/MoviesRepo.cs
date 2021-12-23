@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Infra
 {
-    public class MoviesRepo : BaseRepo<Movie, MovieDetails, MovieData>
+    public class MoviesRepo : BaseRepo<Movie, MovieData>
     {
         private readonly List<CategoryData> _categories;
         public MoviesRepo() : this(null) { }
@@ -16,7 +16,5 @@ namespace Infra
 
         protected internal override Movie ToEntity(MovieData d)
             => new Movie(d, _categories);
-        protected internal override MovieDetails DetailsToEntity(MovieData d)
-            => new MovieDetails(d);
     }
 }
