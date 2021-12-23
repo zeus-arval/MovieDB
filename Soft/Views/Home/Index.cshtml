@@ -1,14 +1,15 @@
-@using Soft.Models
+@using Facade
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Home</h2>
+<h2>Welcome to my test project - MovieDB!</h2>
+<br />
 
-@(Html.DevExtreme().DataGrid<Movie>()
+@(Html.DevExtreme().DataGrid<MovieViewModel>()
     .ShowBorders(true)
-    .DataSource(d => d.WebApi().Controller("MoviesList").Key("MovieId"))
+    .DataSource(d => d.WebApi().Controller("MoviesList").Key("Id"))
     .Columns(columns => {
         columns.AddFor(m => m.Title)
             .Lookup(lookup => lookup
@@ -56,13 +57,23 @@
 
 @using (Html.DevExtreme().NamedTemplate("descriptionContent"))
 {
-    @(Html.DevExtreme().DataGrid<Movie>()
+    @(Html.DevExtreme().DataGrid<MovieDetailsViewModel>()
                 .ShowBorders(true)
                 .LoadPanel(l => l.Enabled(false))
                 .Columns(columns =>
                 {
-                    columns.AddFor(m => m.Description);
-                    columns.AddFor(m => m.Rating);
+                    columns.AddFor(m => m.Title)
+                        .AllowSorting(false);
+
+                    columns.AddFor(m => m.Year)
+                        .AllowSorting(false);
+
+                    columns.AddFor(m => m.Rating)
+                        .AllowSorting(false);
+
+                    columns.AddFor(m => m.Description)
+                        .AllowSorting(false);
+
                 }
                 )
                 .DataSource(d => d.WebApi()
@@ -70,7 +81,7 @@
                     .LoadAction("GetMoviesDescriptions")
                     .LoadParams(new
                     {
-                        id = new JS("data.MovieId")
+                        id = new JS("data.Id")
                     }
                 )
             )
