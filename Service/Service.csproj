@@ -51,9 +51,17 @@
       <Project>{466DC1E1-75FF-4702-8727-CA56D75C1CDC}</Project>
       <Name>Aids</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{282B2E6D-0957-4E70-979C-46FAD3D7B6B2}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{8CC8901A-A40C-403C-99CA-0FA81135C754}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facade\Facade.csproj">
+      <Project>{0C90D044-A355-4F04-8AB7-69A1B150C54C}</Project>
+      <Name>Facade</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infra\Infra.csproj">
       <Project>{DE60C923-5129-45C8-9ACA-630B2D9D5D48}</Project>

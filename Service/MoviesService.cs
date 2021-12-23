@@ -1,20 +1,22 @@
-﻿using Domain;
+﻿using Data;
+using Domain;
 using Domain.Common.Aids;
+using Facade;
 using Infra;
 using Service.Common;
 
 namespace Service
 {
-    public class MoviesService : BaseService<Movie, MovieDetails>
+    public class MoviesService : BaseService<Movie, MovieDetails, MovieData, MovieViewModel>
     {
         public MoviesService() : base(new MoviesRepo()) { }
 
-        public MovieDetails GetMovieDetailsById(int id)
+        public MovieDetailsViewModel GetMovieDetailsById(int id)
         {
-            if (Items is null) return null;
+            if (Items is null) GetItemsFromRepo();
             if (id < 0 || id > Items.Count) return null;
-            Movie movie = _repo.Get(id);
-            return Copier.CopyMembers(movie, new MovieDetails()) ?? new MovieDetails();
+            MovieData movie = _repo.Get(id);
+            return Copier.CopyMembers(movie, new MovieDetailsViewModel());
         }
     }
 }
