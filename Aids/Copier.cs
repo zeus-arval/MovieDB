@@ -13,7 +13,7 @@
             {
                 var name = property.Name;
                 var p = to?.GetType().GetProperty(name);
-                if (p == null) continue;
+                if (p is null) continue;
                 var v = property.GetValue(from);
                 Safe.Run(() => p.SetValue(to, v));
             }
