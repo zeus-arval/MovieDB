@@ -2,9 +2,12 @@
 
 namespace Data
 {
+    /// <summary>
+    /// Class with hardcoded information in CategoryData and MovieData format
+    /// MoviesList is used as data storage in this project
+    /// </summary>
     public static class MoviesList
     {
-
         public static readonly List<CategoryData> categories = new List<CategoryData>
         {
             new CategoryData() { Name = "Thriller", Id = 0 },

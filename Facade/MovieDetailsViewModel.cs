@@ -2,6 +2,13 @@
 
 namespace Facade
 {
+    /// <summary>
+    /// View model for Movie Details
+    ///     Title: String
+    ///     Description: String
+    ///     Year: Int
+    ///     Rating: Int
+    /// </summary>
     public class MovieDetailsViewModel : BaseViewModel
     {
         public string Title { get; set; }

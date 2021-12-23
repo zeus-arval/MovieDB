@@ -1,11 +1,15 @@
-﻿using Data;
-using Data.Common;
+﻿using Data.Common;
 using Domain.Common;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Infra.Common
 {
+    /// <summary>
+    /// Base Repository class
+    ///     Gets POCO class from Data List by Id: Int
+    ///     Gets list of Domain classes
+    /// </summary>
     public abstract class BaseRepo<TEntity, TData> : IBaseRepo<TEntity, TData>
         where TData : class, IBaseData, new()
         where TEntity : class, IBaseEntity, new()

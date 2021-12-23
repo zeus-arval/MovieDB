@@ -8,6 +8,12 @@ using System.Linq;
 
 namespace Service.Common
 {
+    /// <summary>
+    /// Base Service class 
+    ///     Contains a list of domains
+    ///     Gets a list of View Models
+    ///     Gets a list of domains
+    /// </summary>
     public class BaseService<TEntity, TDetails, TData, TView> : IBaseService<TView>
         where TEntity : class, IBaseEntity, new()
         where TDetails : class, IBaseEntity, new()

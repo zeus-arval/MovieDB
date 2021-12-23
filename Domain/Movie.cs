@@ -5,6 +5,13 @@ using System.Linq;
 
 namespace Domain
 {
+    /// <summary>
+    /// Domain for Movie.
+    ///     Title: String
+    ///     CategoryName: String
+    ///     Year: Int
+    ///     Rating: Int
+    /// </summary>
     public class Movie : BaseEntity<MovieData>
     {
         public Movie() : this(null, null) { }

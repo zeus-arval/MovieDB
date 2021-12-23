@@ -8,15 +8,16 @@ using System.Linq;
 
 namespace Tests.Service
 {
+    /// <summary>
+    /// Test class for testing Movie Service functionality
+    /// Checks:
+    ///     GetMovieDetailsById(id: Int)
+    ///     GetList()
+    /// </summary>
     [TestClass]
     public class MovieServiceTests
     {
-        private MoviesService _service;
-        [TestInitialize]
-        public void Initialize() 
-        {
-            _service = new MoviesService();
-        }
+        private MoviesService _service = new MoviesService();
 
         [TestMethod]
         public void TestGetMovieDetailsById()

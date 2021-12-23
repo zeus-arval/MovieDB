@@ -3,12 +3,18 @@ using System.Web.Http;
 using DevExtreme.AspNet.Data;
 using DevExtreme.AspNet.Mvc;
 using System.Collections.Generic;
-using Domain;
 using Service;
 using Facade;
 
-namespace Soft.Controllers {
-    public class MoviesListController : ApiController {
+namespace Soft.Controllers
+{
+    /// <summary>
+    /// API controller for movies. Works with Information located in MoviesList static class
+    /// Gets Movies' list
+    /// Gets Movie Details by Movie Id: Int
+    /// </summary>
+    public class MoviesListController : ApiController 
+    {
         private MoviesService _service = new MoviesService();
 
         [HttpGet]

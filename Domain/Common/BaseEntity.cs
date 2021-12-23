@@ -3,6 +3,9 @@ using Domain.Common.Aids;
 
 namespace Domain.Common
 {
+    /// <summary>
+    /// Base Domain class for getting information from MoviesList using POCO models
+    /// </summary>
     public abstract class BaseEntity<TData> : IBaseEntity
         where TData : class, IBaseData, new()
     {

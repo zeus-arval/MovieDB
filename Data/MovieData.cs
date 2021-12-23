@@ -2,6 +2,14 @@
 
 namespace Data
 {
+    /// <summary>
+    /// Poco class for Movie
+    ///     Id: Int (Principal Key)
+    ///     Title: String
+    ///     Description: String
+    ///     Year: Int
+    ///     categoryId: Int (Foreign Key)
+    /// </summary>
     public class MovieData : BaseData
     {
         public string Title { get; set; }

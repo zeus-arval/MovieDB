@@ -3,6 +3,13 @@ using Domain.Common;
 
 namespace Domain
 {
+    /// <summary>
+    /// Domain with movie's details
+    ///     Title: String
+    ///     Description: String
+    ///     Year: Int
+    ///     Rating: Int
+    /// </summary>
     public class MovieDetails : BaseEntity<MovieData>
     {
         public MovieDetails() : this(null) { }
