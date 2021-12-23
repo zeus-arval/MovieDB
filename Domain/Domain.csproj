@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MovieDetails.cs" />
     <Compile Include="Common\Aids\Copier.cs" />
     <Compile Include="Common\Aids\Safe.cs" />
     <Compile Include="Common\BaseEntity.cs" />

@@ -2,9 +2,9 @@
 
 namespace Infra.Common
 {
-    public interface IBaseRepo<TEntity, TDetails>
+    public interface IBaseRepo<TEntity>
     {
-        TDetails Get(int id);
+        TEntity Get(int id);
         List<TEntity> Get();
     }
 }
